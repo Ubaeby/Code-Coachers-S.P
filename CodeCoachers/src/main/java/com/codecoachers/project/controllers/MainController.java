@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 //import org.springframework.web.bind.annotation.RequestParam;
 //import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.codecoachers.project.models.Coach;
 import com.codecoachers.project.models.Review;
@@ -159,8 +160,7 @@ public class MainController {
 		}
 		else {
 			Coach coach = cServ.findCoachId(id);
-			newCoach.setUser(coach.getUser());
-			newCoach.setUser(user);
+			newCoach.setReviews(coach.getReviews());
 			cServ.updateCoach(newCoach);
 			return "redirect:/profile/{id}";
 		}

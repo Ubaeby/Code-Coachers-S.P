@@ -28,7 +28,7 @@ public class CoachService {
 	}
 	
 	public void deleteCoach(Coach c) {
-		c.getReviews().remove(0);
+		c.getReviews().clear();
 		coach.delete(c);
 	}
 	

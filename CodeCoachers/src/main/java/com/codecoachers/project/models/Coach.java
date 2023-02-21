@@ -47,7 +47,7 @@ public class Coach {
 	@JoinColumn(name="user_id")
 	private User user;
 	
-	@OneToMany(mappedBy="coach", fetch = FetchType.LAZY, orphanRemoval = true, cascade = CascadeType.PERSIST)
+	@OneToMany(mappedBy="coach", fetch = FetchType.LAZY, orphanRemoval = true, cascade = CascadeType.ALL)
 	private List<Review> reviews;
 	
 	
