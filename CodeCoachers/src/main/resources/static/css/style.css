@@ -1,0 +1,186 @@
+@charset "ISO-8859-1";
+
+
+/* Register and Login Css */
+.div1 {
+	width: 50%;
+	margin:auto;
+	background: white;
+}
+
+h1 , .lorem {
+	text-align: center;
+}
+
+.mb-3 {
+	padding: 3%;
+}
+
+.form-div {
+	width: 75%;
+	margin: auto;
+}
+
+.form-label {
+	padding: 2%;
+}
+
+.form-check-label {
+	margin-top: 30px;
+	margin-left: 80px;
+}
+
+#loginDiv {
+	display: flex;	
+}
+
+#registerDiv {
+	display:flex;
+}
+
+.registerButton {
+	margin-top: 20px;
+	margin-left: 70%;
+}
+
+.hireBut {
+	margin-left: 35%;
+}
+.submitButton {
+	background-color: #5c6bc0;
+	margin-top: 20px;
+	margin-left: 30%;
+}
+
+.submitButton:hover {
+	background-color: #81d4fa;
+}
+
+.link {
+	margin-left: 35%;
+}
+
+.section1 {
+	background: #5c6bc0;
+	padding-top: 5%;
+	width: 45%;
+	line-height: 82.5vh;
+}
+
+.section2 {
+	padding-top: 5%;
+	width: 100%;
+}
+
+.section4 {
+	width: 75%;
+}
+
+.section5 {
+	width: 30%;
+	padding: 20px;
+}
+.header {
+	text-align: center;
+}
+
+.lorem {
+	font-size: 24px;
+}
+
+.divPractice {
+	border: 2px solid black;
+}
+
+/* Nav css */
+
+.homeBody {
+	background-color: #5c6bc0;
+	width: 70%;
+	margin: auto;
+}
+
+.nav {
+	height: 70px;
+}
+
+.nav-item {
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.cfy {
+	padding: 2% 0% 8px 0%;
+}
+
+
+/* Profile Css */
+
+
+
+.editLink {
+	margin-top: 13%;
+	margin-left: 40%;
+}
+
+.imgDiv {
+	width: 30%;
+}
+
+.divScroll {
+	height: 20%;
+	width: 25%;
+	position: absolute;
+	transform: translate(30%, 0px);
+}
+
+
+/* All Fancy animations below */
+
+.rainbow {
+	color: red;
+	animation: change 20s linear infinite;
+	font-weight: bold;
+}
+
+.mainImage {
+	position: absolute;
+	height: 400px;
+	width: 400px;
+	animation: up-down 6s ease infinite;
+}
+
+.reviewHover:hover {
+	animation: changeColor 200s linear;
+}
+
+@keyframes up-down {
+	0% {
+		transform: translateY(-3%);
+	}
+	
+	50% {
+		transform: translateY(3%);
+	}
+	
+	100% {
+		transform: translateY(-3%);
+	}
+}
+
+@keyframes change {
+	0% {color: #ef9a9a;}
+	17% {color: #ffcc80;}
+	34% {color: #fff59d;}
+	51% {color: #4db6ac;}
+	68% {color: #64b5f6;}
+	85% {color: #9575cd;}
+	100% {color: #f8bbd0;}
+
+}
+
+@keyframes changeColor {
+	0% {background-color: white;}
+	1% {background-color: #c5cae9;}
+	2% {background-color: #9fa8da;}
+}
